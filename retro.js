@@ -58,6 +58,53 @@ const styleHeaders = () => {
   })
 }
 
+const resetButtons = () => {
+  const allButtons = document.querySelectorAll('button,input[type="submit"]')
+  allButtons.forEach(button => {
+    button.setAttribute('style', `
+      border-top: #ddd 5px solid !important;
+      border-left: #ddd 5px solid !important;
+      border-right: #999 5px solid !important;
+      border-bottom: #999 5px solid !important;
+      box-sizing: content-box;
+      background: lightgrey !important;
+      padding: 3px !important;
+      color: black !important;
+      text-decoration: none !important;
+    `)
+  })
+}
+
+const resetInputs = () => {
+  const allInputs = document.querySelectorAll('input[type="text"],textarea')
+  allInputs.forEach(input => {
+    input.setAttribute('style', `
+      border-top: #999 5px solid;
+      border-left: #999 5px solid;
+      border-right: #ddd 5px solid;
+      border-bottom: #ddd 5px solid;
+    `)
+  })
+}
+
+const addHitCounter = () => {
+  // const numberOfHits = Math.floor(Math.random() * 99999998) + 1
+  const hitImages = [
+    'https://i.imgur.com/FpPGzPs.png',
+    'https://i.imgur.com/4YJbNJy.png'
+  ]
+  const hitCounterUrl = randElement(hitImages) //`https://counter.websiteout.net/example.php?C=${24}&D=8&N=${numberOfHits}`
+  const image = document.createElement('img')
+  image.src = hitCounterUrl
+  image.setAttribute('referrerpolicy', 'no-referrer')
+  image.style.cssText = `
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  `
+  document.body.appendChild(image)
+}
+
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if(!sender.tab || !sender.tab.url){
@@ -69,6 +116,9 @@ chrome.runtime.onMessage.addListener(
         downgradeBackground()
         randomiseTextColor()
         styleHeaders()
+        resetButtons()
+        resetInputs()
+        addHitCounter()
       } else {
         window.location.reload()
       }
