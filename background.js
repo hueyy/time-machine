@@ -12,21 +12,12 @@ chrome.runtime.onInstalled.addListener(function() {
   })
 })
 
-let tabState = {}
-
 chrome.pageAction.onClicked.addListener(() => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
 
     const tabId = tabs[0].id
-    
-    let activate = true
-    if(tabState[tabId]){
-      activate = false
-    }
-    tabState[tabId] = activate
-    console.log(tabState)
 
-    chrome.tabs.sendMessage(tabId, { activate }, (response) => {
+    chrome.tabs.sendMessage(tabId, { toggle: true }, (response) => {
       console.log(response)
     })
   })

@@ -18,7 +18,7 @@ const injectCursor = () => {
 
 const downgradeBackground = () => {
   const tiledBackgrounds = [
-    'https://i.imgur.com/lu5XT48.gif',
+    // 'https://i.imgur.com/lu5XT48.gif',
     'https://www.warnerbros.com/archive/spacejam/movie/img/bg_stars.gif',
     'https://www.warnerbros.com/archive/spacejam/movie/cmp/behind/img/bg-behind.gif',
     'https://www.warnerbros.com/archive/spacejam/movie/cmp/lineup/img/bg-lineup.gif',
@@ -120,6 +120,10 @@ const resetNavigation = () => {
   const navLinks = document.querySelectorAll('nav>ul>li>a')
   const newNav = document.createElement('div')
   navLinks.forEach(navLink => {
+    navLink.style.cssText = `
+      ${navLink.style.cssText}
+      color: #000 !important;
+    `
     newNav.appendChild(navLink)
   })
 
@@ -128,11 +132,16 @@ const resetNavigation = () => {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: #fff;
+    background-color: #fff !important;
+    color: #000 !important;
     width: 200px;
     display: flex;
     flex-direction: column;
-    overflow:scroll;
+    overflow: scroll;
+    height: 100%;
+    box-shadow: inset 0px 0px 0px 10px #999 !important;
+    padding: 15px !important;
+    box-sizing: border-box;
   `
   document.body.appendChild(newNav)
 }
@@ -161,26 +170,84 @@ const addMarquees = () => {
   })
 }
 
+const makeSVGsGlow = () => {
+  const svgs = document.querySelectorAll('svg')
+  const colors = [
+    '#000',
+    '#ff00ff',
+    '#00ffff',
+    '#00ff00'
+  ]
+  svgs.forEach(svg => {
+    svg.style.cssText = `
+      ${svg.style.cssText}
+      filter: drop-shadow( -5px -5px 5px ${randElement(colors)} );
+    `
+  })
+}
+
+const updateText = () => {
+  const replacements = [
+    [/2[0-9]{3}/g, '1990'],
+    [/(trump|donald trump)/gi, 'Bill Clinton'],
+    [/facebook/gi, 'AIM'],
+    [/instagram/gi, 'ICQ'],
+    [/twitter/gi, 'AOL'],
+    [/google/gi, 'AskJeeves']
+  ]
+
+  const allElements = document.querySelectorAll('*')
+  allElements.forEach(element => {
+    element.childNodes.forEach(node => {
+      if(node.nodeType === 3){
+        const nodeText = node.nodeValue
+
+        let replacedText = `${nodeText}`
+        console.log(replacements)
+        replacements.forEach(([regex, replaceWith]) => {
+          console.log(regex, replaceWith)
+          replacedText = replacedText.replace(regex, replaceWith)
+        })
+
+        if(replacedText !== nodeText){
+          element.replaceChild(document.createTextNode(replacedText), node);
+        }
+      }
+    })
+  })
+}
+
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if(!sender.tab || !sender.tab.url){
       // from background script
+      if(request.toggle){
 
-      console.log(request.activate)
-      if(request.activate){
-        activateUniversalStyles()
-        downgradeBackground()
-        randomiseTextColor()
-        styleHeaders()
-        resetButtons()
-        resetInputs()
-        addHitCounter()
-        resetNavigation()
-        replaceImages()
-        redrawScroll()
-        addMarquees()
+        let retroStatus = localStorage.getItem('retroStatus')
+
+        if(retroStatus){
+          window.location.reload()
+          localStorage.removeItem('retroStatus')
+        } else {
+          activateUniversalStyles()
+          downgradeBackground()
+          randomiseTextColor()
+          styleHeaders()
+          resetButtons()
+          resetInputs()
+          addHitCounter()
+          resetNavigation()
+          replaceImages()
+          redrawScroll()
+          addMarquees()
+          makeSVGsGlow()
+          
+          updateText()
+
+          localStorage.setItem('retroStatus', 'true')
+        }
       } else {
-        window.location.reload()
+        // do nothing
       }
 
       sendResponse({ done: true })
