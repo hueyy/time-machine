@@ -17,6 +17,14 @@ body.retro-activated iframe {
   display: none !important;
 }
 
+body.retro-activated img {
+  image-rendering: pixelated;
+}
+
+body.retro-activated div {
+  box-shadow: none !important
+}
+
 /*
 h1, h2, h3 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
@@ -46,7 +54,7 @@ li, p, figcaption {
 
  */
 
-.rainbow-wordart {
+ body.retro-activated .rainbow-wordart {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -68,7 +76,7 @@ li, p, figcaption {
   -webkit-text-fill-color: transparent;
  }
 
- .blue-impact-wordart {
+ body.retro-activated .blue-impact-wordart {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -83,7 +91,7 @@ li, p, figcaption {
   letter-spacing: -0.05em !important;
  }
 
- .superhero-wordart {
+ body.retro-activated .superhero-wordart {
   position: relative;
   z-index: 1;
   display: inline-block;
