@@ -6,10 +6,34 @@ h1, h2, h3 {
   font-family: "Times New Roman" !important;
 }
 
-* {
-  background: none !important;
+video {
+  display: none !important;
 }
+iframe {
+  display: none !important;
+}
+h1, h2, h3 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 92px;
+  padding: 80px 50px;
+  text-align: center;
+ }
+h1, h2, h3 {
+  color: #d364fb !important;
+  background-color: #b2b39e;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+ }
 
-body {
-  background: url('images/truncbyh.gif') !important;
-}
+li, p, figcaption {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 92px;
+  padding: 80px 50px;
+  text-align: center;
+ }
+li, p, figcaption {
+  color: #ee3434 !important;
+  background-color: #b2b39e;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #d5d5d5;
+ }
