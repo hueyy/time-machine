@@ -275,5 +275,4 @@
 }
 html {
     animation: aCursor 5s infinite !important;
-    pointer-events: none !important;
 }
