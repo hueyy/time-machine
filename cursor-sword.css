@@ -1,18 +1,18 @@
 @keyframes aCursor {
     0% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Spinning Diamond Sword1.png"), auto;
+        cursor: url("images/pointers/Spinning Diamond Sword1.png"), auto;
     }
     25% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Spinning Diamond Sword2.png"), auto;
+        cursor: url("images/pointers/Spinning Diamond Sword2.png"), auto;
     }
     50% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Spinning Diamond Sword3.png"), auto;
+        cursor: url("images/pointers/Spinning Diamond Sword3.png"), auto;
     }
     75% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Spinning Diamond Sword4.png"), auto;
+        cursor: url("images/pointers/Spinning Diamond Sword4.png"), auto;
     }
     100% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Spinning Diamond Sword1.png"), auto;
+        cursor: url("images/pointers/Spinning Diamond Sword1.png"), auto;
     }
 }
 html {
