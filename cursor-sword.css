@@ -17,5 +17,4 @@
 }
 html {
     animation: aCursor 1s infinite !important;
-    pointer-events: none !important;
 }

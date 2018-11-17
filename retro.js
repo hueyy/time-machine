@@ -1,13 +1,16 @@
 // runs in active tab
-var cursorStyle = document.createElement("link");
-cursorStyle.setAttribute("rel", "stylesheet");
-cursorStyle.setAttribute("type", "text/css");
-var cursors = ["hollow", "pyramid", "sword", "triforce"];
-var cursorURL = "cursor-" + cursors[Math.round(Math.random() * cursors.length) % cursors.length] + ".css";
-cursorStyle.setAttribute("href", chrome.runtime.getURL(cursorURL));
-document.head.appendChild(cursorStyle);
 
 const randElement = arr => arr[Math.floor(Math.random() * arr.length)]
+
+const injectCursor = () {
+  const cursorStyle = document.createElement("link");
+  cursorStyle.setAttribute("rel", "stylesheet");
+  cursorStyle.setAttribute("type", "text/css");
+  const cursors = ["hollow", "pyramid", "sword", "triforce"];
+  const cursorURL = "cursor-" + cursors[Math.round(Math.random() * cursors.length) % cursors.length] + ".css";
+  cursorStyle.setAttribute("href", chrome.runtime.getURL(cursorURL));
+  document.head.appendChild(cursorStyle);
+}
 
 const downgradeBackground = () => {
   const tiledBackgrounds = [
