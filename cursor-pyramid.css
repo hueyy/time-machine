@@ -1,36 +1,35 @@
 @keyframes aCursor {
     0% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide1.png"), auto !important;
     }
     11% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide2.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide2.png"), auto !important;
     }
     22% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide3.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide3.png"), auto !important;
     }
     33% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide4.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide4.png"), auto !important;
     }
     44% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide5.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide5.png"), auto !important;
     }
     56% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide6.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide6.png"), auto !important;
     }
     67% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide7.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide7.png"), auto !important;
     }
     78% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide8.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide8.png"), auto !important;
     }
     89% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide9.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide9.png"), auto !important;
     }
     100% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Pyramide1.png"), auto !important;
     }
 }
 html {
-    animation: aCursor 1s infinite !important;
-    pointer-events: none !important;
+    animation: aCursor 1s infinite;
 }

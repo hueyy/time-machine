@@ -1,279 +1,278 @@
 @keyframes aCursor {
     0% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow1.png"), auto !important;
     }
     1% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow2.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow2.png"), auto !important;
     }
     2% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow3.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow3.png"), auto !important;
     }
     3% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow4.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow4.png"), auto !important;
     }
     4% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow5.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow5.png"), auto !important;
     }
     6% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow6.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow6.png"), auto !important;
     }
     7% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow7.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow7.png"), auto !important;
     }
     8% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow8.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow8.png"), auto !important;
     }
     9% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow9.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow9.png"), auto !important;
     }
     10% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow10.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow10.png"), auto !important;
     }
     11% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow11.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow11.png"), auto !important;
     }
     12% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow12.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow12.png"), auto !important;
     }
     13% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow13.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow13.png"), auto !important;
     }
     14% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow14.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow14.png"), auto !important;
     }
     16% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow15.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow15.png"), auto !important;
     }
     17% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow16.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow16.png"), auto !important;
     }
     18% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow17.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow17.png"), auto !important;
     }
     19% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow18.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow18.png"), auto !important;
     }
     20% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow19.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow19.png"), auto !important;
     }
     21% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow20.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow20.png"), auto !important;
     }
     22% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow21.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow21.png"), auto !important;
     }
     23% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow22.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow22.png"), auto !important;
     }
     24% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow23.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow23.png"), auto !important;
     }
     26% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow24.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow24.png"), auto !important;
     }
     27% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow25.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow25.png"), auto !important;
     }
     28% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow26.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow26.png"), auto !important;
     }
     29% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow27.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow27.png"), auto !important;
     }
     30% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow28.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow28.png"), auto !important;
     }
     31% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow29.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow29.png"), auto !important;
     }
     32% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow30.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow30.png"), auto !important;
     }
     33% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow31.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow31.png"), auto !important;
     }
     34% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow32.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow32.png"), auto !important;
     }
     36% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow33.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow33.png"), auto !important;
     }
     37% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow34.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow34.png"), auto !important;
     }
     38% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow35.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow35.png"), auto !important;
     }
     39% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow36.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow36.png"), auto !important;
     }
     40% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow37.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow37.png"), auto !important;
     }
     41% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow38.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow38.png"), auto !important;
     }
     42% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow39.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow39.png"), auto !important;
     }
     43% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow40.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow40.png"), auto !important;
     }
     44% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow41.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow41.png"), auto !important;
     }
     46% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow42.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow42.png"), auto !important;
     }
     47% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow43.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow43.png"), auto !important;
     }
     48% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow44.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow44.png"), auto !important;
     }
     49% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow45.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow45.png"), auto !important;
     }
     50% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow46.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow46.png"), auto !important;
     }
     51% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow47.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow47.png"), auto !important;
     }
     52% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow48.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow48.png"), auto !important;
     }
     53% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow49.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow49.png"), auto !important;
     }
     54% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow50.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow50.png"), auto !important;
     }
     56% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow51.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow51.png"), auto !important;
     }
     57% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow52.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow52.png"), auto !important;
     }
     58% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow53.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow53.png"), auto !important;
     }
     59% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow54.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow54.png"), auto !important;
     }
     60% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow55.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow55.png"), auto !important;
     }
     61% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow56.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow56.png"), auto !important;
     }
     62% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow57.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow57.png"), auto !important;
     }
     63% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow58.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow58.png"), auto !important;
     }
     64% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow59.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow59.png"), auto !important;
     }
     66% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow60.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow60.png"), auto !important;
     }
     67% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow61.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow61.png"), auto !important;
     }
     68% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow62.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow62.png"), auto !important;
     }
     69% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow63.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow63.png"), auto !important;
     }
     70% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow64.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow64.png"), auto !important;
     }
     71% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow65.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow65.png"), auto !important;
     }
     72% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow66.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow66.png"), auto !important;
     }
     73% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow67.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow67.png"), auto !important;
     }
     74% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow68.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow68.png"), auto !important;
     }
     76% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow69.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow69.png"), auto !important;
     }
     77% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow70.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow70.png"), auto !important;
     }
     78% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow71.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow71.png"), auto !important;
     }
     79% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow72.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow72.png"), auto !important;
     }
     80% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow73.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow73.png"), auto !important;
     }
     81% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow74.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow74.png"), auto !important;
     }
     82% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow75.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow75.png"), auto !important;
     }
     83% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow76.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow76.png"), auto !important;
     }
     84% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow77.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow77.png"), auto !important;
     }
     86% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow78.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow78.png"), auto !important;
     }
     87% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow79.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow79.png"), auto !important;
     }
     88% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow80.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow80.png"), auto !important;
     }
     89% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow81.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow81.png"), auto !important;
     }
     90% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow82.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow82.png"), auto !important;
     }
     91% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow83.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow83.png"), auto !important;
     }
     92% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow84.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow84.png"), auto !important;
     }
     93% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow85.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow85.png"), auto !important;
     }
     94% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow86.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow86.png"), auto !important;
     }
     96% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow87.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow87.png"), auto !important;
     }
     97% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow88.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow88.png"), auto !important;
     }
     98% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow89.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow89.png"), auto !important;
     }
     99% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow90.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow90.png"), auto !important;
     }
     100% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Hollow1.png"), auto !important;
     }
 }
 html {
-    animation: aCursor 5s infinite !important;
-    pointer-events: none !important;
+    animation: aCursor 5s infinite;
 }

@@ -1,33 +1,32 @@
 @keyframes aCursor {
     0% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning1.png"), auto !important;
     }
     13% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning2.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning2.png"), auto !important;
     }
     25% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning3.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning3.png"), auto !important;
     }
     38% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning4.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning4.png"), auto !important;
     }
     50% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning5.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning5.png"), auto !important;
     }
     63% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning6.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning6.png"), auto !important;
     }
     75% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning7.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning7.png"), auto !important;
     }
     88% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning8.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning8.png"), auto !important;
     }
     100% {
-        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning1.png"), auto;
+        cursor: url("chrome-extension://__MSG_@@extension_id__/images/pointers/Triforce spinning1.png"), auto !important;
     }
 }
 html {
-    animation: aCursor 1s infinite !important;
-    pointer-events: none !important;
+    animation: aCursor 1s infinite
 }
