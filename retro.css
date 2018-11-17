@@ -1,17 +1,23 @@
-* {
+body.retro-activated * {
   font-family: "Comic Sans MS" !important;
+  background: none !important;
 }
 
-h1, h2, h3 {
+body.retro-activated h1,
+body.retro-activated h2,
+body.retro-activated h3 {
   font-family: "Times New Roman" !important;
 }
 
-video {
+body.retro-activated video {
   display: none !important;
 }
-iframe {
+
+body.retro-activated iframe {
   display: none !important;
 }
+
+/*
 h1, h2, h3 {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 92px;
@@ -36,4 +42,71 @@ li, p, figcaption {
   background-color: #b2b39e;
   letter-spacing: .05em;
   text-shadow: 4px 4px 0px #d5d5d5;
+ }
+
+ */
+
+.rainbow-wordart {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transform: scale(1, 1.5);
+  -webkit-transform: scale(1, 1.5);
+  -moz-transform: scale(1, 1.5);
+  -o-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+
+  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af) !important;
+  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .blue-impact-wordart {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: Impact, sans-serif;
+  color: #24c0fd;
+  -webkit-text-stroke: 0.01em #0000aa !important;
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1) !important;
+  text-shadow: 0.13em -0.13em 0px #0000aa !important;
+  letter-spacing: -0.05em !important;
+ }
+
+ .superhero-wordart {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transform: skew(0, -15deg) scale(1, 1.5) !important;
+  -webkit-transform: skew(0, -15deg) scale(1, 1.5) !important;
+  -moz-transform: skew(0, -15deg) scale(1, 1.5);
+  -o-transform: skew(0, -15deg) scale(1, 1.5);
+  -ms-transform: skew(0, -15deg) scale(1, 1.5);
+
+  font-family: Impact;
+  background: #fdea00;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
+  background: -moz-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdea00), color-stop(44%, #fdcf00), color-stop(100%, #fc2700));
+  background: -webkit-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%) !important;
+  background: -o-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+  background: -ms-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+  background: linear-gradient(to bottom, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdea00', endColorstr='#fc2700', GradientType=0) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
  }

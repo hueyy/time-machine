@@ -9,6 +9,10 @@ document.head.appendChild(cursorStyle);
 
 const randElement = arr => arr[Math.floor(Math.random() * arr.length)]
 
+const activateUniversalStyles = () => {
+  document.body.classList.add('retro-activated')
+}
+
 const downgradeBackground = () => {
   const tiledBackgrounds = [
     'https://i.imgur.com/lu5XT48.gif',
@@ -18,7 +22,6 @@ const downgradeBackground = () => {
 
   const body = document.querySelector('body')
   const background = randElement(tiledBackgrounds)
-  console.log(background)
 
   body.setAttribute('style', `${body.style.cssText}background: url('${background}') !important;`)
 }
@@ -38,7 +41,36 @@ const randomiseTextColor = () => {
   })
 }
 
-window.setTimeout(() => {
-  downgradeBackground()
-  randomiseTextColor()
-}, 1000)
+const styleHeaders = () => {
+  const allHeaders = document.querySelectorAll('h1,h2,h3')
+  const possibleClasses = [
+    'rainbow-wordart',
+    'blue-impact-wordart',
+    'superhero-wordart'
+  ]
+  allHeaders.forEach(text => {
+    const randomClass = randElement(possibleClasses)
+    text.classList.add(randomClass)
+    // text.innerHTML = text.textContent
+  })
+}
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if(!sender.tab || !sender.tab.url){
+      // from background script
+
+      console.log(request.activate)
+      if(request.activate){
+        activateUniversalStyles()
+        downgradeBackground()
+        randomiseTextColor()
+        styleHeaders()
+      } else {
+        window.location.reload()
+      }
+
+      sendResponse({ done: true })
+    }
+  }
+)
