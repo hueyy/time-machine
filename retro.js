@@ -20,7 +20,10 @@ const downgradeBackground = () => {
   const tiledBackgrounds = [
     'https://i.imgur.com/lu5XT48.gif',
     'https://www.warnerbros.com/archive/spacejam/movie/img/bg_stars.gif',
-    'https://www.warnerbros.com/archive/spacejam/movie/cmp/behind/img/bg-behind.gif'
+    'https://www.warnerbros.com/archive/spacejam/movie/cmp/behind/img/bg-behind.gif',
+    'https://www.warnerbros.com/archive/spacejam/movie/cmp/lineup/img/bg-lineup.gif',
+    'https://www.warnerbros.com/archive/spacejam/movie/cmp/souvenirs/img/bg-souvenirs.gif',
+    'https://www.warnerbros.com/archive/spacejam/movie/cmp/jump/img/bg-jump.gif'
   ]
 
   const body = document.querySelector('body')
@@ -79,10 +82,13 @@ const resetInputs = () => {
   const allInputs = document.querySelectorAll('input[type="text"],textarea')
   allInputs.forEach(input => {
     input.setAttribute('style', `
-      border-top: #999 5px solid;
-      border-left: #999 5px solid;
-      border-right: #ddd 5px solid;
-      border-bottom: #ddd 5px solid;
+      border-top: #999 5px solid !important;
+      border-left: #999 5px solid !important;
+      border-right: #ddd 5px solid !important;
+      border-bottom: #ddd 5px solid !important;
+      background-color: #fff !important;
+      color: #000 !important;
+      border-radius: 0 !important;
     `)
   })
 }
@@ -105,6 +111,56 @@ const addHitCounter = () => {
   document.body.appendChild(image)
 }
 
+const redrawScroll = () => {
+  document.body.style.overflow = 'hidden'
+  document.body.style.overflow = 'auto'
+}
+
+const resetNavigation = () => {
+  const navLinks = document.querySelectorAll('nav>ul>li>a')
+  const newNav = document.createElement('div')
+  navLinks.forEach(navLink => {
+    newNav.appendChild(navLink)
+  })
+
+  newNav.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow:scroll;
+  `
+  document.body.appendChild(newNav)
+}
+
+const replaceImages = () => {
+  const images = document.querySelectorAll('img')
+  images.forEach(image => {
+    image.src = `https://retro.mntco.de/resample?url=${encodeURIComponent(image.src)}`
+    image.removeAttribute('srcset')
+  })
+
+  const pictures = document.querySelectorAll('picture>source')
+  pictures.forEach(pic => {
+    pic.srcset = `https://retro.mntco.de/resample?url=${encodeURIComponent(pic.srcset.split(' ')[0])}`
+  })
+}
+
+const addMarquees = () => {
+  const h2s = document.querySelectorAll('h2')
+  h2s.forEach(h2 => {
+    if(Math.random() >= 0.5){
+      const marquee = document.createElement('marquee')
+      h2.parentNode.insertBefore(marquee, h2)
+      marquee.appendChild(h2)
+    }
+  })
+}
+
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if(!sender.tab || !sender.tab.url){
@@ -119,6 +175,10 @@ chrome.runtime.onMessage.addListener(
         resetButtons()
         resetInputs()
         addHitCounter()
+        resetNavigation()
+        replaceImages()
+        redrawScroll()
+        addMarquees()
       } else {
         window.location.reload()
       }
