@@ -143,13 +143,31 @@ const resetNavigation = () => {
     padding: 15px !important;
     box-sizing: border-box;
   `
-  document.body.appendChild(newNav)
+
+  if(navLinks.length > 0){
+    document.body.appendChild(newNav)
+    document.body.style.marginLeft = '200px'
+  } else {
+    document.body.style.marginLeft = '0'
+  }
 }
 
 const replaceImages = () => {
+  const imageReplacements = [
+    [
+      'https://www.google.com/images/branding/googlelogo',
+      'https://icdn7.digitaltrends.com/image/google_1998-2-351x113.jpg'
+    ]
+  ]
   const images = document.querySelectorAll('img')
   images.forEach(image => {
-    image.src = `https://retro.mntco.de/resample?url=${encodeURIComponent(image.src)}`
+    let src = image.src
+    imageReplacements.forEach(([toFind, replaceWith]) => {
+      if(src.indexOf(toFind) >= 0){
+        src = replaceWith
+      }
+    })
+    image.src = `https://retro.mntco.de/resample?url=${encodeURIComponent(src)}`
     image.removeAttribute('srcset')
   })
 
@@ -190,6 +208,9 @@ const updateText = () => {
   const replacements = [
     [/2[0-9]{3}/g, '1990'],
     [/(trump|donald trump)/gi, 'Bill Clinton'],
+    [/(theresa may)/gi, 'Tony Blair'],
+    [/(May\'s)/gi, 'Blair\'s'],
+    [/(macron|emmanuel macron)/gi, 'Jacques Chirac'],
     [/facebook/gi, 'AIM'],
     [/instagram/gi, 'ICQ'],
     [/twitter/gi, 'AOL'],
@@ -241,6 +262,7 @@ chrome.runtime.onMessage.addListener(
           redrawScroll()
           addMarquees()
           makeSVGsGlow()
+          injectCursor()
           
           updateText()
 

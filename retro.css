@@ -1,7 +1,3 @@
-body.retro-activated {
-  margin-left: 200px;
-}
-
 body.retro-activated div {
   font-family: "Comic Sans MS" !important;
   background: none !important;
@@ -28,6 +24,19 @@ body.retro-activated img {
 body.retro-activated div {
   box-shadow: none !important
 }
+
+/*
+body.retro-activated li:hover,
+body.retro-activated caption:hover,
+body.retro-activated p:hover,
+body.retro-activated span:hover,
+body.retro-activated h1:hover,
+body.retro-activated h2:hover,
+body.retro-activated h3:hover {
+  background-color: black !important;
+  color: #fff !important
+}
+*/
 
 /*
 h1, h2, h3 {
